@@ -58,14 +58,3 @@ def searchYT(query):
         webbrowser.open(web)
         pywhatkit.playonyt(query)
         speak("Done, Sir")
-
-def searchWiki(query):
-    if "wikipedia" in query:
-        speak("Searching from wikipedia...")
-        query = query.replace("wikipedia", "")
-        query = query.replace("search wikipedia", "")
-        query = query.replace("jarvis", "")
-        result = wikipedia.summary(query, sentences = 2)
-        speak("According to wikipedia..")
-        print(result)
-        speak(result)
