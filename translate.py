@@ -1,7 +1,7 @@
 from fnmatch import translate
 from time import sleep
 from googletrans import Translator
-import googletrans #pip install googletrans
+import googletrans 
 from gtts import gTTS
 import googletrans
 import pyttsx3
